@@ -1,5 +1,3 @@
-"""API Service for backend communication."""
-
 import 'package:dio/dio.dart';
 import '../config/app_config.dart';
 
@@ -79,6 +77,17 @@ class APIService {
       return response.data as Map<String, dynamic>;
     } catch (e) {
       throw Exception('Failed to process voice query: $e');
+    }
+  }
+
+  /// Fetch dashboard entries (mock or real backend).
+  Future<List<Map<String, dynamic>>> fetchDashboard() async {
+    try {
+      final response = await _dio.get('/dashboard/');
+      final data = response.data as List<dynamic>;
+      return data.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+    } catch (e) {
+      throw Exception('Failed to fetch dashboard: $e');
     }
   }
 }

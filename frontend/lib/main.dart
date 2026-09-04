@@ -1,6 +1,5 @@
-// ignore_for_file: public_member_api_docs
-
 import 'package:flutter/material.dart';
+import 'screens/dashboard_screen.dart';
 
 /// Uncomment the line below to use the recommended Material 3 theme.
 void main() => runApp(const MyApp());
@@ -64,6 +63,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: () {},
               child: const Text('Spracheingabe'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (_) => const DashboardScreen(),
+                ));
+              },
+              child: const Text('Dashboard'),
             ),
           ],
         ),

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "timestamp": "2026-09-04T10:00:00Z",
+    "vehicle_manufacturer": "BMW",
+    "vehicle_model": "E46 328i",
+    "catalyst_count": 1,
+    "min_price_eur": 260.0,
+    "max_price_eur": 320.0,
+    "note": "Unterboden, Zustand: gut"
+  },
+  {
+    "id": "2",
+    "timestamp": "2026-09-03T15:30:00Z",
+    "vehicle_manufacturer": "Volkswagen",
+    "vehicle_model": "Polo 6N",
+    "catalyst_count": 1,
+    "min_price_eur": 250.0,
+    "max_price_eur": 280.0,
+    "note": "Unterboden, leichte Abnutzung"
+  }
+]
