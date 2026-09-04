@@ -1,0 +1,3 @@
+target-os: android
+minimum-target-sdk: 21
+target-sdk: 34

@@ -1,0 +1,21 @@
+"""Analysis Options for Dart/Flutter."""
+
+include: package:very_good_analysis/analysis_options.1.0.0.yaml
+
+linter:
+  rules:
+    - camel_case_extensions
+    - camel_case_types
+    - library_names
+    - library_prefixes
+    - non_constant_identifier_names
+    - prefer_final_fields
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.config.dart"
+  errors:
+    missing_required_param: error
+    missing_return: error
