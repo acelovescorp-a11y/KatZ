@@ -1,0 +1,111 @@
+name: katz
+description: "KatZ - Vision & Voice Katalysator-Wert-App für iOS und Android."
+
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Themes
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  flutter_adaptive_scaffold: ^0.1.7
+  smooth_page_indicator: ^1.1.0
+
+  # Camera & Media
+  camera: ^0.10.5+2
+  image_picker: ^1.0.4
+  video_player: ^2.7.2
+
+  # ML Kit & Computer Vision
+  google_mlkit_text_recognition: ^0.12.0
+  google_mlkit_object_detection: ^0.12.0
+  google_mlkit_face_detection: ^0.12.0
+
+  # Audio & Voice
+  flutter_tts: ^0.14.0
+  record: ^5.0.1
+  audio_session: ^0.1.16
+  permission_handler: ^11.4.4
+
+  # Networking & API
+  dio: ^5.3.1
+  http: ^1.1.0
+  connectivity_plus: ^5.0.2
+
+  # State Management
+  provider: ^6.1.0
+  riverpod: ^2.4.0
+  riverpod_annotation: ^2.1.1
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Data Serialization
+  json_annotation: ^4.8.1
+  freezed_annotation: ^2.4.1
+  equatable: ^2.0.5
+
+  # Date & Time
+  intl: ^0.19.0
+  timezone: ^0.9.2
+
+  # Utilities
+  logger: ^2.0.1
+  uuid: ^4.0.0
+  validators: ^3.0.0
+  crypto: ^3.0.3
+
+  # Navigation
+  go_router: ^12.0.0
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.0
+  freezed: ^2.4.1
+  riverpod_generator: ^2.3.1
+
+  # Linting & Formatting
+  flutter_lints: ^3.0.0
+  very_good_analysis: ^5.1.0
+
+  # Testing
+  mocktail: ^1.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/locales/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Italic.ttf
+          style: italic
